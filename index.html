@@ -86,7 +86,13 @@
         background-color: rgba(29, 29, 34, 0.4);
         font-size: 14px;
         color: white;
+        transition: 0.1s;
         resize: none;
+        outline: none;
+
+        &:focus {
+          border: solid 2px #134fcf;
+        }
       }
 
       & > .question {
