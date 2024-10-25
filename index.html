@@ -785,14 +785,102 @@
         },
       ];
 
+      const computerOperation = [
+        {
+          chapter: "Root Directory",
+          question: "/",
+          answer: [
+            '최상의 디렉토리, 절대 경로 표기 시작 위치'
+          ],
+        },
+        {
+          chapter: "Root Directory",
+          question: "/bin",
+          answer: [
+            '기본적인 명령어가 저장된 디렉토리'
+          ],
+        },
+        {
+          chapter: "Root Directory",
+          question: "/sbin",
+          answer: [
+            '시스템 명령어가 저장된 디렉토리'
+          ],
+        },
+        {
+          chapter: "Root Directory",
+          question: "/home",
+          answer: [
+            '사용자들의 홈 디렉토리'
+          ],
+        },
+        {
+          chapter: "Root Directory",
+          question: "/opt",
+          answer: [
+            '옵션 또는 제 3자의 소프트웨어가 설치되는 디렉토리'
+          ],
+        },
+        {
+          chapter: "Root Directory",
+          question: "/mnt",
+          answer: [
+            '외부 장치들의 마운트 포인트로 사용되는 디렉토리'
+          ],
+        },
+        {
+          chapter: "Root Directory",
+          question: "/tmp",
+          answer: [
+            '임시 파일을 저장하기 위한 디렉토리'
+          ],
+        },
+        {
+          chapter: "Root Directory",
+          question: "/usr",
+          answer: [
+            '일반 사용자들이 주로 사용하는 디렉토리'
+          ],
+        },
+        {
+          chapter: "Root Directory",
+          question: "/var",
+          answer: [
+            '기타 모든 다용도로 사용될 수 있는 파일들이 저장되는 디렉토리'
+          ],
+        },
+        {
+          chapter: "Root Directory",
+          question: "/root",
+          answer: [
+            '시스템 관리자 홈 디렉토리'
+          ],
+        },
+        {
+          chapter: "Root Directory",
+          question: "/etc",
+          answer: [
+            '시스템의 대부분의 설정 파일을 저장하는 디렉토리'
+          ],
+        },
+        {
+          chapter: "Root Directory",
+          question: "/dev",
+          answer: [
+            '시스템 디바이스의 파일을 저장하는 디렉토리'
+          ],
+        },
+      ]
+
       const questions = [
         // ...chapter1,
         // ...chapter2,
         // ...chapter3,
         // ...chapter4,
-        ...chapter5,
-        ...chapter6,
-        ...chapter7,
+        // ...chapter5,
+        // ...chapter6,
+        // ...chapter7,
+        computerOperation
       ];
       const allChapters = Array.from(
         new Set(questions.map((item) => item.chapter))
