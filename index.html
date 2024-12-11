@@ -870,7 +870,45 @@
             '시스템 디바이스의 파일을 저장하는 디렉토리'
           ],
         },
-      ]
+      ];
+
+      const digitalOp= [
+        {
+          chapter: '디지털 논리 회로',
+          question: "Dont'care",
+          answer: ['문제에서 명시적으로 제시되지 않은 입력', '정상적인 상황에서 고려할 필요가 없는 입력']
+        },
+        {
+          chapter: '디지털 논리 회로',
+          question: "조합 논리 회로",
+          answer: ['입력에 따라서만 출력이 결정']
+        },
+        {
+          chapter: '디지털 논리 회로',
+          question: "반가산기",
+          answer: ['2개 1-bit 수 덧셈']
+        },
+        {
+          chapter: '디지털 논리 회로',
+          question: "전가산기",
+          answer: ['3개의 1-bit 수 덧셈']
+        },
+        {
+          chapter: '디지털 논리 회로',
+          question: "조합 논리 회로 설계 과정",
+          answer: ['1. 문제로부터 입력 신호와 출력 신호 개수 파악', '2. 입력 신호와 출력 신호에 대한 변수 설정', '3. 입출력 관계의 분석에 기반한 진리표 작성', '4. 출력 변수 각각에 대한 함수식 유도 및 간소화', '5. 논리 게이트 회로 구현']
+        },
+        {
+          chapter: '디지털 논리 회로',
+          question: "활성화 제어 신호",
+          answer: ['논리 소자의 동작을 활성화 또는 비활성화시킬 목적으로 사용하는 제어 신호']
+        },
+        {
+          chapter: '디지털 논리 회로',
+          question: "Tri-state 출력",
+          answer: ['기본 논리값(0 또는 1)이 아닌 제 3의 출력 상태', '출력 신호가 없는 상태 & 전기적으로 오픈된 상태 (High Impedance)']
+        }
+      ];
 
       const questions = [
         // ...chapter1,
@@ -880,7 +918,8 @@
         // ...chapter5,
         // ...chapter6,
         // ...chapter7,
-        ...computerOperation
+        // ...computerOperation
+        ...digitalOp
       ];
       const allChapters = Array.from(
         new Set(questions.map((item) => item.chapter))
